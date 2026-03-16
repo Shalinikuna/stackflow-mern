@@ -24,9 +24,9 @@ const Home = () => {
       if (search) params.search = search;
       if (tag) params.tag = tag;
       const res = await api.get('/questions', { params });
-      setQuestions(res.data.questions);
-      setTotal(res.data.total);
-      setPages(res.data.pages);
+      setQuestions(res.data?.questions || []);
+setTotal(res.data?.total || 0);
+setPages(res.data?.pages || 1);
     } catch (err) {
       console.error(err);
     } finally {
@@ -105,7 +105,7 @@ const Home = () => {
         <div className="questions-list card">
           {loading ? (
             <div className="spinner" />
-          ) : questions.length === 0 ? (
+          ) : questions?.length === 0 ? (
             <div className="empty-state">
               <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
