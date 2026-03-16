@@ -1,0 +1,143 @@
+.question-detail-page {
+  padding: 40px 0 80px;
+}
+
+.breadcrumb {
+  display: inline-block;
+  color: var(--text-muted);
+  font-size: 14px;
+  margin-bottom: 24px;
+  transition: color 0.15s;
+}
+
+.breadcrumb:hover {
+  color: var(--accent);
+}
+
+.detail-card {
+  margin-bottom: 32px;
+}
+
+.detail-header {
+  margin-bottom: 20px;
+}
+
+.detail-title {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.3;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.detail-meta {
+  display: flex;
+  gap: 20px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.detail-meta span::before {
+  content: '';
+}
+
+.detail-body {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  white-space: pre-wrap;
+  margin-bottom: 24px;
+  padding: 20px;
+  background: var(--bg-elevated);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--accent);
+}
+
+.detail-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.detail-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.detail-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--bg-elevated);
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+}
+
+.author-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.author-name {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--accent);
+}
+
+.author-rep {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+.detail-actions {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  gap: 10px;
+}
+
+.answers-section {
+  margin-bottom: 40px;
+}
+
+.answers-heading {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.answers-list {
+  padding: 0 24px;
+}
+
+.post-answer-section {}
+
+.post-answer-heading {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.sign-in-prompt {
+  text-align: center;
+  padding: 32px;
+  font-size: 15px;
+  color: var(--text-secondary);
+}
+
+.sign-in-prompt a {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.sign-in-prompt a:hover {
+  text-decoration: underline;
+}

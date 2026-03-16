@@ -1,0 +1,144 @@
+.question-card {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border-light);
+  transition: background 0.15s;
+}
+
+.question-card:last-child {
+  border-bottom: none;
+}
+
+.question-card:hover {
+  background: none;
+}
+
+.question-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 80px;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+
+.stat {
+  text-align: center;
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-light);
+  min-width: 72px;
+}
+
+.stat.has-answers {
+  border-color: var(--accent);
+  background: var(--accent-dim);
+}
+
+.stat.has-answers .stat-number {
+  color: var(--accent);
+}
+
+.stat.accepted {
+  border-color: var(--success);
+  background: rgba(34, 197, 94, 0.1);
+}
+
+.stat.accepted .stat-number {
+  color: var(--success);
+}
+
+.stat-number {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.stat-label {
+  display: block;
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.question-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.question-title {
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  line-height: 1.4;
+  transition: color 0.15s;
+}
+
+.question-title:hover {
+  color: var(--accent);
+}
+
+.question-excerpt {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.question-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.question-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.question-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.meta-avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.meta-author {
+  color: var(--accent);
+  font-weight: 600;
+  transition: opacity 0.15s;
+}
+
+.meta-author:hover {
+  opacity: 0.8;
+}
+
+.meta-rep {
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+.meta-time {
+  color: var(--text-muted);
+}
+
+.meta-time::before {
+  content: '·';
+  margin-right: 6px;
+}
