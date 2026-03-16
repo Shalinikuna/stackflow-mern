@@ -60,14 +60,12 @@ const createQuestion = async (req, res) => {
     const normalizedTags = (tags || []).map((t) => t.toLowerCase().trim());
 
     const question = await Question.create({
-      title,
-      body,
-      tags: normalizedTags,
-      author: req.user._id,
-    });
+  title,
+  body,
+  tags: normalizedTags
+});
 
-    await question.populate('author', 'username avatar reputation');
-
+    
     res.status(201).json({ question });
   } catch (err) {
     res.status(500).json({ message: err.message });
